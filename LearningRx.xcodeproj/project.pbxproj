@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					A00DD7071DA5C63C008A5FD0 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V65562664F;
 						ProvisioningStyle = Automatic;
 					};
 					A00DD71B1DA5C63C008A5FD0 = {
@@ -412,11 +413,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V65562664F;
 				INFOPLIST_FILE = LearningRx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UCCS.LearningRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -424,11 +428,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V65562664F;
 				INFOPLIST_FILE = LearningRx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UCCS.LearningRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -505,6 +512,7 @@
 				A00DD7321DA5C63C008A5FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A00DD7331DA5C63C008A5FD0 /* Build configuration list for PBXNativeTarget "LearningRxTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +521,7 @@
 				A00DD7351DA5C63C008A5FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A00DD7361DA5C63C008A5FD0 /* Build configuration list for PBXNativeTarget "LearningRxUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +530,7 @@
 				A00DD7381DA5C63C008A5FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
