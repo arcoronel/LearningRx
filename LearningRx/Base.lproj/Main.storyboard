@@ -65,6 +65,41 @@
             <point key="canvasLocation" x="396.09375" y="312.5"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="pOC-dA-AXm">
+            <objects>
+                <viewController id="Me3-Wp-FcJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wpU-8z-5wg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q66-5h-aEj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sLT-BQ-yaG">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gbJ-vY-r6d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptR-Aq-Ucp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="1072"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JbY-rY-mLS">
+            <objects>
+                <navigationController id="bcu-aD-mCb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gUd-y4-oqh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Me3-Wp-FcJ" kind="relationship" relationship="rootViewController" id="p5K-B9-xXS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tc2-3t-Mia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="1142"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="R2G-MN-03p">
             <objects>
                 <viewController id="jXm-aa-t42" sceneMemberID="viewController">
@@ -80,13 +115,6 @@
                                 <frame key="frameInset" minX="424" minY="68" width="176" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-Vx-5fn">
-                                <frame key="frameInset" minX="167" minY="426" width="196" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -114,13 +142,6 @@
                                 <frame key="frameInset" minX="424" minY="56" width="176" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jacob" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdF-MX-5YP">
-                                <frame key="frameInset" minX="558" minY="442" width="136" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
