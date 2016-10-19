@@ -36,7 +36,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jXm-aa-t42" kind="show" id="abO-8v-qeM"/>
+                                    <segue destination="jXm-aa-t42" kind="show" id="Bxw-mF-P3z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OW-R2-UG1">
@@ -48,7 +48,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FfD-zL-9fe" kind="show" id="HJS-ss-t7u"/>
+                                    <segue destination="FfD-zL-9fe" kind="show" id="HIs-GI-4H7"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LearningRx Logo-RGB-no tag" translatesAutoresizingMaskIntoConstraints="NO" id="EhQ-Q0-b4x">
@@ -63,41 +63,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="396.09375" y="312.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pOC-dA-AXm">
-            <objects>
-                <viewController id="Me3-Wp-FcJ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wpU-8z-5wg"/>
-                        <viewControllerLayoutGuide type="bottom" id="Q66-5h-aEj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sLT-BQ-yaG">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gbJ-vY-r6d"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ptR-Aq-Ucp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="254" y="1072"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="JbY-rY-mLS">
-            <objects>
-                <navigationController id="bcu-aD-mCb" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gUd-y4-oqh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Me3-Wp-FcJ" kind="relationship" relationship="rootViewController" id="p5K-B9-xXS"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tc2-3t-Mia" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-400" y="1142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="R2G-MN-03p">
@@ -164,7 +129,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wAh-JQ-GNS"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eYq-kQ-eHP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pz8-2O-dXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
