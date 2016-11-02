@@ -800,6 +800,7 @@
                         <outlet property="btn35" destination="Eth-KS-4Tk" id="QLa-a8-r4y"/>
                         <outlet property="btn36" destination="O66-JI-pBQ" id="JbU-Vj-ynB"/>
                         <outlet property="btn37" destination="3gu-Qt-OUQ" id="kpU-dz-Bdq"/>
+                        <outlet property="btn38" destination="RRd-YN-VOg" id="8rM-tU-jCN"/>
                         <outlet property="btn39" destination="XbZ-tZ-VmW" id="TVg-Ub-8EB"/>
                         <outlet property="btn4" destination="kdg-Bh-7nd" id="h0z-tL-d41"/>
                         <outlet property="btn40" destination="FF4-hJ-lKc" id="Ljr-Hh-mv4"/>
