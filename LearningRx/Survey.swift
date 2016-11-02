@@ -45,6 +45,13 @@ func selectedButton(selected: Int,button1: UIButton,button2: UIButton,button3: U
         button4.backgroundColor = UIColor.white
         button5.backgroundColor = UIColor.black
     }
+    else if selected == 6 {
+        button1.backgroundColor = UIColor.white
+        button2.backgroundColor = UIColor.white
+        button3.backgroundColor = UIColor.white
+        button4.backgroundColor = UIColor.white
+        button5.backgroundColor = UIColor.white
+    }
 }
 
 class SurveyViewController: UIViewController {
@@ -112,7 +119,7 @@ class SurveyViewController: UIViewController {
     var memorySkills: Int = 0
     var visualProcessingSkills: Int = 0
     var logicAndReasoningSkills: Int = 0
-    var sensoryMotorSkils: Int = 0
+    var sensoryMotorSkills: Int = 0
     var oppositionalBehavior: Int = 0
     var workOrAcademicPerformance: Int = 0
     var qSet: Int = 0
@@ -120,17 +127,6 @@ class SurveyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //var yAxis = 100
-        //for buttonId in 1...5 {
-        //   let button = UIButton(frame: CGRect(x: 100, y: yAxis, width: 30, height: 30))
-        //    button.backgroundColor = UIColor.white
-        //    button.addTarget(self, action: #selector(buttonPressed), for: UIControlEvents.touchUpInside)
-        //    button
-        //    button.tag = buttonId
-        //    yAxis = yAxis+50
-        //    self.view.addSubview(button)
-        //}
         lbl1.text = questions[0]
         lbl2.text = questions[1]
         lbl3.text = questions[2]
@@ -141,10 +137,6 @@ class SurveyViewController: UIViewController {
         lbl8.text = questions[7]
         
     }
-    //func buttonPressed(sender: UIButton){
-    //    selectedButton(selected: 1, btn1: button1, btn2: button2, btn3: button3, btn4: button4, btn5: button5)
-    
-    //}
     
     @IBAction func button1Pressed(_ sender: AnyObject) {
         if sender as! NSObject == btn1 {
@@ -286,7 +278,6 @@ class SurveyViewController: UIViewController {
         }
         
     }
-    
     @IBAction func button5Pressed(_ sender: AnyObject) {
         if sender as! NSObject == btn5 {
             selectedButton(selected: 5, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
@@ -322,7 +313,31 @@ class SurveyViewController: UIViewController {
         }
     }
     @IBAction func nextQuestions(_ sender: AnyObject) {
-        
+        if qSet <= 7 {
+            selectedButton(selected: 6, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
+            selectedButton(selected: 6, button1: btn6, button2: btn7, button3: btn8, button4: btn9, button5: btn10)
+            selectedButton(selected: 6, button1: btn11, button2: btn12, button3: btn13, button4: btn14, button5: btn15)
+            selectedButton(selected: 6, button1: btn16, button2: btn17, button3: btn18, button4: btn19, button5: btn20)
+            selectedButton(selected: 6, button1: btn21, button2: btn22, button3: btn23, button4: btn24, button5: btn25)
+            selectedButton(selected: 6, button1: btn26, button2: btn27, button3: btn28, button4: btn29, button5: btn30)
+            selectedButton(selected: 6, button1: btn31, button2: btn32, button3: btn33, button4: btn34, button5: btn35)
+            selectedButton(selected: 6, button1: btn36, button2: btn37, button3: btn38, button4: btn39, button5: btn40)
+            if qSet == 0 || qSet == 1 || qSet == 2 || qSet == 3{
+                attentionSkills = attentionSkills + q1 + q5
+                proccessingSpeedSkills = proccessingSpeedSkills + q2 + q6
+                auditoryProcessingSkills = auditoryProcessingSkills + q3 + q7
+                memorySkills = memorySkills + q4 + q8
+            }else if qSet == 4 || qSet == 5 || qSet == 6 || qSet == 7 {
+                visualProcessingSkills = visualProcessingSkills + q1 + q5
+                logicAndReasoningSkills = logicAndReasoningSkills + q2 + q6
+                sensoryMotorSkills = sensoryMotorSkills + q3 + q7
+                oppositionalBehavior = oppositionalBehavior + q4 + q8
+            }
+            qSet = qSet + 1
+            if qSet == 8 {
+                self.performSegue(withIdentifier: "surveyResultsSegue", sender: self)
+            }
+        }
     }
     
 }
