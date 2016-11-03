@@ -430,14 +430,6 @@ class SurveyViewController: UIViewController {
                     workOrAcademicPerformance = workOrAcademicPerformance + q8
                 }
             }
-            q1 = 0
-            q2 = 0
-            q3 = 0
-            q4 = 0
-            q5 = 0
-            q6 = 0
-            q7 = 0
-            q8 = 0
             qSet = qSet + 1
             if qSet == 8 {
                 lbl1.text = questions[0]
@@ -451,15 +443,6 @@ class SurveyViewController: UIViewController {
                 qIndex = 7
                 qSet = 0
                 self.performSegue(withIdentifier: "surveyResultsSegue", sender: self)
-                attentionSkills = 0
-                proccessingSpeedSkills = 0
-                auditoryProcessingSkills = 0
-                memorySkills = 0
-                visualProcessingSkills = 0
-                logicAndReasoningSkills = 0
-                sensoryMotorSkills = 0
-                oppositionalBehavior = 0
-                workOrAcademicPerformance = 0
                 progress = 0
             }
             else if qSet < 8 {
