@@ -113,6 +113,7 @@ class SurveyViewController: UIViewController {
     var q6: Int = 0
     var q7: Int = 0
     var q8: Int = 0
+    var qIndex: Int = 7
     var attentionSkills: Int = 0
     var proccessingSpeedSkills: Int = 0
     var auditoryProcessingSkills: Int = 0
@@ -123,7 +124,63 @@ class SurveyViewController: UIViewController {
     var oppositionalBehavior: Int = 0
     var workOrAcademicPerformance: Int = 0
     var qSet: Int = 0
-    var questions: [String] = ["Distracted from the task at hand","Reading is slow","Poor reading comprehension","Often asks to have things repeated","has difficulty maintaining attention","Slow, deliberate speech", "Makes spelling errors in written assignments","Has difficulty remembering telephone numbers"]
+    var questions: [String] = ["Distracted from the task at hand","Reading is slow","Poor reading comprehension","Often asks to have things repeated","has difficulty maintaining attention","Slow, deliberate speech", "Makes spelling errors in written assignments","Has difficulty remembering telephone numbers",
+        "Has difficulty organizing activities",
+        "Completes math assignments slowly",
+        "Has difficulty sounding out unknown words",
+        "Needs to look multiple times when copying",
+        "Has difficulty doing two things at once",
+        "Takes a long time to complete tasks",
+        "Oral reading is slow or choppy",
+        "Has difficulty following verbal directions",
+        "Avoids prolonged mental effort",
+        "Generally does things slowly",
+        "Needs words repeated when taking spelling tests",
+        "Has difficulty recalling stories and jokes",
+        "Has difficulty remembering things just heard",
+        "Is often one of the last to complete tasks",
+        "Avoids reading",
+        "Gets poor test results when being tested for facts",
+        "Is impulsive",
+        "Avoids or has difficulty with video games",
+        "Has difficulty finding words for verbal expression",
+        "Needs to restudy or reread materials",
+        "Has poor study or work habits",
+        "Writing assignments take too long",
+        "Has difficulty reading or spelling phonetically",
+        "Has problems remembering names",
+        "Poor sense of direction/map reading skills",
+        "Poor math grades or test scores",
+        "Has poor handwriting",
+        "Swears or uses obscene language",
+        "Jigsaw puzzles are difficult or avoided",
+        "Has difficulty understanding stories or jokes",
+        "Squints, blinks, or rubs eyes when reading",
+        "Loses temper",
+        "Misreads similar words",
+        "Thoughts and materials are poorly organized",
+        "Has difficulty hearing",
+        "Argues with authority figures",
+        "Poor at or dislikes drawing",
+        "Poor at or avoids games like chess or checkers",
+        "Has poor coordination",
+        "Refuses requests or disobeys rules",
+        "Has difficulty with word math problems",
+        "Has problems seeing the “big picture”",
+        "Has speech difficulties",
+        "Deliberately does things that annoy others",
+        "Has difficulty creating pictures in the mind",
+        "Takes a while to catch on to new things",
+        "Complains about eye strain or fatigue",
+        "Blames others for mistakes",
+        "Lacks creativity or imagination in writing",
+        "Doesn’t like card games",
+        "Is bothered by loud sounds",
+        "Is angry and resentful",
+        "Poor at problem solving",
+        "Has difficulty planning steps to solve problems",
+        "Skips words or lines when reading",
+        "Holds grudges or seeks revenge"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -312,6 +369,18 @@ class SurveyViewController: UIViewController {
             q8 = 4
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let srvc  : SurveyResultsViewController = segue.destination as! SurveyResultsViewController
+        srvc.attSkills = String(attentionSkills)
+        srvc.proSpeedSkills = String(proccessingSpeedSkills)
+        srvc.audProSkills = String(auditoryProcessingSkills)
+        srvc.memSkills = String(memorySkills)
+        srvc.visProSkills = String(visualProcessingSkills)
+        srvc.logAndReasoningSkills = String(logicAndReasoningSkills)
+        srvc.senMotorSkills = String(sensoryMotorSkills)
+        srvc.oppBehavior = String(oppositionalBehavior)
+        srvc.workOrAcaPerformance = String(workOrAcademicPerformance)
+    }
     @IBAction func nextQuestions(_ sender: AnyObject) {
         if qSet <= 7 {
             selectedButton(selected: 6, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
@@ -333,9 +402,48 @@ class SurveyViewController: UIViewController {
                 sensoryMotorSkills = sensoryMotorSkills + q3 + q7
                 oppositionalBehavior = oppositionalBehavior + q4 + q8
             }
+            q1 = 0
+            q2 = 0
+            q3 = 0
+            q4 = 0
+            q5 = 0
+            q6 = 0
+            q7 = 0
+            q8 = 0
             qSet = qSet + 1
             if qSet == 8 {
+                lbl1.text = questions[0]
+                lbl2.text = questions[1]
+                lbl3.text = questions[2]
+                lbl4.text = questions[3]
+                lbl5.text = questions[4]
+                lbl6.text = questions[5]
+                lbl7.text = questions[6]
+                lbl8.text = questions[7]
+                qIndex = 7
+                qSet = 0
                 self.performSegue(withIdentifier: "surveyResultsSegue", sender: self)
+                attentionSkills = 0
+                proccessingSpeedSkills = 0
+                auditoryProcessingSkills = 0
+                memorySkills = 0
+                visualProcessingSkills = 0
+                logicAndReasoningSkills = 0
+                sensoryMotorSkills = 0
+                oppositionalBehavior = 0
+                workOrAcademicPerformance = 0
+                
+            }
+            else if qSet < 8 {
+                lbl1.text = questions[qIndex + 1]
+                lbl2.text = questions[qIndex + 2]
+                lbl3.text = questions[qIndex + 3]
+                lbl4.text = questions[qIndex + 4]
+                lbl5.text = questions[qIndex + 5]
+                lbl6.text = questions[qIndex + 6]
+                lbl7.text = questions[qIndex + 7]
+                lbl8.text = questions[qIndex + 8]
+                qIndex = qIndex + 8
             }
         }
     }
