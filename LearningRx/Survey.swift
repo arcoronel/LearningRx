@@ -104,6 +104,7 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var lbl6: UILabel!
     @IBOutlet weak var lbl7: UILabel!
     @IBOutlet weak var lbl8: UILabel!
+    @IBOutlet weak var progresslbl: UILabel!
     
     var q1: Int = 0
     var q2: Int = 0
@@ -124,6 +125,7 @@ class SurveyViewController: UIViewController {
     var oppositionalBehavior: Int = 0
     var workOrAcademicPerformance: Int = 0
     var qSet: Int = 0
+    var progress: Int = 0
     var questions: [String] = ["Distracted from the task at hand","Reading is slow","Poor reading comprehension","Often asks to have things repeated","has difficulty maintaining attention","Slow, deliberate speech", "Makes spelling errors in written assignments","Has difficulty remembering telephone numbers",
         "Has difficulty organizing activities",
         "Completes math assignments slowly",
@@ -192,6 +194,7 @@ class SurveyViewController: UIViewController {
         lbl6.text = questions[5]
         lbl7.text = questions[6]
         lbl8.text = questions[7]
+        progresslbl.text = "Progress: " + String(progress) + "%"
         
     }
     
@@ -381,6 +384,7 @@ class SurveyViewController: UIViewController {
         srvc.oppBehavior = String(oppositionalBehavior)
         srvc.workOrAcaPerformance = String(workOrAcademicPerformance)
     }
+    
     @IBAction func nextQuestions(_ sender: AnyObject) {
         if qSet <= 7 {
             selectedButton(selected: 6, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
@@ -432,7 +436,7 @@ class SurveyViewController: UIViewController {
                 sensoryMotorSkills = 0
                 oppositionalBehavior = 0
                 workOrAcademicPerformance = 0
-                
+                progress = 0
             }
             else if qSet < 8 {
                 lbl1.text = questions[qIndex + 1]
@@ -444,6 +448,8 @@ class SurveyViewController: UIViewController {
                 lbl7.text = questions[qIndex + 7]
                 lbl8.text = questions[qIndex + 8]
                 qIndex = qIndex + 8
+                progress = Int((Double(qSet) / 8) * 100)
+                progresslbl.text = "Progress: " + String(progress) + "%"
             }
         }
     }

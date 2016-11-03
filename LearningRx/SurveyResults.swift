@@ -43,6 +43,7 @@ class SurveyResultsViewController: UIViewController {
         lbl7.text = senMotorSkills
         lbl8.text = oppBehavior
         lbl9.text = workOrAcaPerformance
+        navigationItem.hidesBackButton = true
     }
     
     override func didReceiveMemoryWarning() {
