@@ -16,6 +16,7 @@
 		A00DD7211DA5C63C008A5FD0 /* LearningRxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DD7201DA5C63C008A5FD0 /* LearningRxTests.swift */; };
 		A00DD72C1DA5C63C008A5FD0 /* LearningRxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DD72B1DA5C63C008A5FD0 /* LearningRxUITests.swift */; };
 		A0748D031DCAC0A800F393D4 /* SurveyResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0748D021DCAC0A800F393D4 /* SurveyResults.swift */; };
+		DCFB46D71DCBE39A0060350F /* SurveyStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB46D61DCBE39A0060350F /* SurveyStart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A00DD72B1DA5C63C008A5FD0 /* LearningRxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningRxUITests.swift; sourceTree = "<group>"; };
 		A00DD72D1DA5C63C008A5FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0748D021DCAC0A800F393D4 /* SurveyResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyResults.swift; sourceTree = "<group>"; };
+		DCFB46D61DCBE39A0060350F /* SurveyStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyStart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				A00DD70B1DA5C63C008A5FD0 /* AppDelegate.swift */,
 				A00DD70D1DA5C63C008A5FD0 /* ViewController.swift */,
+				DCFB46D61DCBE39A0060350F /* SurveyStart.swift */,
 				A00DD70F1DA5C63C008A5FD0 /* Main.storyboard */,
 				A00956631DC179ED00530734 /* Survey.swift */,
 				A0748D021DCAC0A800F393D4 /* SurveyResults.swift */,
@@ -269,6 +272,7 @@
 				A00956641DC179ED00530734 /* Survey.swift in Sources */,
 				A00DD70E1DA5C63C008A5FD0 /* ViewController.swift in Sources */,
 				A0748D031DCAC0A800F393D4 /* SurveyResults.swift in Sources */,
+				DCFB46D71DCBE39A0060350F /* SurveyStart.swift in Sources */,
 				A00DD70C1DA5C63C008A5FD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,7 +19,7 @@ class SurveyResultsViewController: UIViewController {
     var senMotorSkills = String()
     var oppBehavior = String()
     var workOrAcaPerformance = String()
-    
+    var person = String()
     
     @IBOutlet weak var lbl1: UILabel!
     @IBOutlet weak var lbl2: UILabel!
@@ -30,6 +30,7 @@ class SurveyResultsViewController: UIViewController {
     @IBOutlet weak var lbl7: UILabel!
     @IBOutlet weak var lbl8: UILabel!
     @IBOutlet weak var lbl9: UILabel!
+    @IBOutlet weak var personlbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class SurveyResultsViewController: UIViewController {
         lbl8.text = oppBehavior
         lbl9.text = workOrAcaPerformance
         navigationItem.hidesBackButton = true
+        personlbl.text = "You Choose: " + person
     }
     
     override func didReceiveMemoryWarning() {

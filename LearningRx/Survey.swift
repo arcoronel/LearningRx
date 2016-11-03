@@ -106,6 +106,7 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var lbl8: UILabel!
     @IBOutlet weak var progresslbl: UILabel!
     
+    var person = String()
     var q1: Int = 0
     var q2: Int = 0
     var q3: Int = 0
@@ -383,6 +384,7 @@ class SurveyViewController: UIViewController {
         srvc.senMotorSkills = String(sensoryMotorSkills)
         srvc.oppBehavior = String(oppositionalBehavior)
         srvc.workOrAcaPerformance = String(workOrAcademicPerformance)
+        srvc.person = person
     }
     
     @IBAction func nextQuestions(_ sender: AnyObject) {
@@ -400,11 +402,33 @@ class SurveyViewController: UIViewController {
                 proccessingSpeedSkills = proccessingSpeedSkills + q2 + q6
                 auditoryProcessingSkills = auditoryProcessingSkills + q3 + q7
                 memorySkills = memorySkills + q4 + q8
-            }else if qSet == 4 || qSet == 5 || qSet == 6 || qSet == 7 {
+                if qSet == 0 {
+                    workOrAcademicPerformance = workOrAcademicPerformance + q3
+                }
+                else if qSet == 1 {
+                    workOrAcademicPerformance = workOrAcademicPerformance + q8
+                }
+                else if qSet == 2 {
+                    workOrAcademicPerformance = workOrAcademicPerformance + q2 + q8
+                }
+                else if qSet == 3 {
+                    workOrAcademicPerformance = workOrAcademicPerformance + q6
+                }
+            }
+            else if qSet == 4 || qSet == 5 || qSet == 6 || qSet == 7 {
                 visualProcessingSkills = visualProcessingSkills + q1 + q5
                 logicAndReasoningSkills = logicAndReasoningSkills + q2 + q6
                 sensoryMotorSkills = sensoryMotorSkills + q3 + q7
                 oppositionalBehavior = oppositionalBehavior + q4 + q8
+                if qSet == 4 {
+                    workOrAcademicPerformance = workOrAcademicPerformance + q2
+                }
+                else if qSet == 6 {
+                    workOrAcademicPerformance = workOrAcademicPerformance + q6
+                }
+                else if qSet == 7 {
+                    workOrAcademicPerformance = workOrAcademicPerformance + q8
+                }
             }
             q1 = 0
             q2 = 0
