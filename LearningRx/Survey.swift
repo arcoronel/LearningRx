@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//function to allow buttons to act like radio buttons
 func selectedButton(selected: Int,button1: UIButton,button2: UIButton,button3: UIButton,button4: UIButton,button5: UIButton) {
     if selected == 1 {
         button1.backgroundColor = UIColor.black
@@ -56,6 +57,7 @@ func selectedButton(selected: Int,button1: UIButton,button2: UIButton,button3: U
 
 class SurveyViewController: UIViewController {
     
+    //Outlets
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var btn3: UIButton!
@@ -106,6 +108,7 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var lbl8: UILabel!
     @IBOutlet weak var progresslbl: UILabel!
     
+    //variables for survey
     var person = String()
     var q1: Int = 0
     var q2: Int = 0
@@ -127,6 +130,7 @@ class SurveyViewController: UIViewController {
     var workOrAcademicPerformance: Int = 0
     var qSet: Int = 0
     var progress: Int = 0
+    // Survey questions
     var questions: [String] = ["Distracted from the task at hand","Reading is slow","Poor reading comprehension","Often asks to have things repeated","has difficulty maintaining attention","Slow, deliberate speech", "Makes spelling errors in written assignments","Has difficulty remembering telephone numbers",
         "Has difficulty organizing activities",
         "Completes math assignments slowly",
@@ -187,6 +191,8 @@ class SurveyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // When view Controller is loaded set first 8 questions and progress
+        
         lbl1.text = questions[0]
         lbl2.text = questions[1]
         lbl3.text = questions[2]
@@ -195,11 +201,15 @@ class SurveyViewController: UIViewController {
         lbl6.text = questions[5]
         lbl7.text = questions[6]
         lbl8.text = questions[7]
+        qIndex = 7
+        qSet = 0
+        progress = 0
         progresslbl.text = "Progress: " + String(progress) + "%"
         
     }
     
     @IBAction func button1Pressed(_ sender: AnyObject) {
+        //When button 1 of 5 is pressed change the color of that button to black and the rest to white and set question score
         if sender as! NSObject == btn1 {
             selectedButton(selected: 1, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
             q1 = 0
@@ -235,6 +245,7 @@ class SurveyViewController: UIViewController {
         
     }
     @IBAction func button2Pressed(_ sender: AnyObject) {
+        //When button 2 of 5 is pressed change the color of that button to black and the rest to white and set question score
         if sender as! NSObject == btn2 {
             selectedButton(selected: 2, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
             q1 = 1
@@ -270,6 +281,7 @@ class SurveyViewController: UIViewController {
         
     }
     @IBAction func button3Pressed(_ sender: AnyObject) {
+        //When button 3 of 5 is pressed change the color of that button to black and the rest to white and set question score
         if sender as! NSObject == btn3 {
             selectedButton(selected: 3, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
             q1 = 2
@@ -305,6 +317,7 @@ class SurveyViewController: UIViewController {
         
     }
     @IBAction func button4Pressed(_ sender: AnyObject) {
+        //When button 4 of 5 is pressed change the color of that button to black and the rest to white and set question score
         if sender as! NSObject == btn4 {
             selectedButton(selected: 4, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
             q1 = 3
@@ -340,6 +353,7 @@ class SurveyViewController: UIViewController {
         
     }
     @IBAction func button5Pressed(_ sender: AnyObject) {
+        //When button 5 of 5 is pressed change the color of that button to black and the rest to white and set question score
         if sender as! NSObject == btn5 {
             selectedButton(selected: 5, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
             q1 = 4
@@ -374,6 +388,7 @@ class SurveyViewController: UIViewController {
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //send data to results page
         let srvc  : SurveyResultsViewController = segue.destination as! SurveyResultsViewController
         srvc.attSkills = String(attentionSkills)
         srvc.proSpeedSkills = String(proccessingSpeedSkills)
@@ -388,7 +403,11 @@ class SurveyViewController: UIViewController {
     }
     
     @IBAction func nextQuestions(_ sender: AnyObject) {
+        //Action when clicking next button
+        //for all question sets when next is clicked all button selections are cleared and score is calculated
+        //after question 8 pass all values to results page and navigate to results page
         if qSet <= 7 {
+            //reseting buttons
             selectedButton(selected: 6, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
             selectedButton(selected: 6, button1: btn6, button2: btn7, button3: btn8, button4: btn9, button5: btn10)
             selectedButton(selected: 6, button1: btn11, button2: btn12, button3: btn13, button4: btn14, button5: btn15)
@@ -397,6 +416,7 @@ class SurveyViewController: UIViewController {
             selectedButton(selected: 6, button1: btn26, button2: btn27, button3: btn28, button4: btn29, button5: btn30)
             selectedButton(selected: 6, button1: btn31, button2: btn32, button3: btn33, button4: btn34, button5: btn35)
             selectedButton(selected: 6, button1: btn36, button2: btn37, button3: btn38, button4: btn39, button5: btn40)
+            //Calculating scores
             if qSet == 0 || qSet == 1 || qSet == 2 || qSet == 3{
                 attentionSkills = attentionSkills + q1 + q5
                 proccessingSpeedSkills = proccessingSpeedSkills + q2 + q6
@@ -430,22 +450,24 @@ class SurveyViewController: UIViewController {
                     workOrAcademicPerformance = workOrAcademicPerformance + q8
                 }
             }
+            //reset all question values for next question because at this point if a user doesn't select a button then the value will carry to next set of questions invalidating data
+            q1 = 0
+            q2 = 0
+            q3 = 0
+            q4 = 0
+            q5 = 0
+            q6 = 0
+            q7 = 0
+            q8 = 0
+            //move to next set
             qSet = qSet + 1
+            //if question set is not 8 set labels to new questions
             if qSet == 8 {
-                lbl1.text = questions[0]
-                lbl2.text = questions[1]
-                lbl3.text = questions[2]
-                lbl4.text = questions[3]
-                lbl5.text = questions[4]
-                lbl6.text = questions[5]
-                lbl7.text = questions[6]
-                lbl8.text = questions[7]
-                qIndex = 7
-                qSet = 0
+                //navigate to results
                 self.performSegue(withIdentifier: "surveyResultsSegue", sender: self)
-                progress = 0
             }
             else if qSet < 8 {
+                //set next questions
                 lbl1.text = questions[qIndex + 1]
                 lbl2.text = questions[qIndex + 2]
                 lbl3.text = questions[qIndex + 3]

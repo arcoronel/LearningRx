@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//Function to allow buttons to act like radio buttons
 func selectedButton(selected: Int,button1: UIButton,button2: UIButton,button3: UIButton) {
     if selected == 1 {
         button1.backgroundColor = UIColor.black
@@ -29,7 +30,7 @@ func selectedButton(selected: Int,button1: UIButton,button2: UIButton,button3: U
 
 class SurveyStartViewController: UIViewController {
     
-    
+    //Outlets
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var btn3: UIButton!
@@ -38,24 +39,29 @@ class SurveyStartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //default for when start survey is started
         selectedButton(selected: 1, button1: btn1, button2: btn2, button3: btn3)
         person = "Self"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //send data to survery
         let svc  : SurveyViewController = segue.destination as! SurveyViewController
         svc.person = person
     }
     
     @IBAction func btn1Pressed(_ sender: AnyObject) {
+        //when button 1 of 3 is selected change color to black and the rest to white and set person variable
         selectedButton(selected: 1, button1: btn1, button2: btn2, button3: btn3)
         person = "Self"
     }
     @IBAction func btn2Pressed(_ sender: AnyObject) {
+        //when button 3 of 3 is selected change color to black and the rest to white and set person variable
         selectedButton(selected: 2, button1: btn1, button2: btn2, button3: btn3)
         person = "Parent"
     }
     @IBAction func btn3Pressed(_ sender: AnyObject) {
+        //when button 3 of 3 is selected change color to black and the rest to white and set person variable
         selectedButton(selected: 3, button1: btn1, button2: btn2, button3: btn3)
         person = "Other"
     }

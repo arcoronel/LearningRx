@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class SurveyResultsViewController: UIViewController {
+    //variables to store data from survey
     var attSkills = String()
     var proSpeedSkills = String()
     var audProSkills = String()
@@ -21,6 +22,7 @@ class SurveyResultsViewController: UIViewController {
     var workOrAcaPerformance = String()
     var person = String()
     
+    //outlets
     @IBOutlet weak var lbl1: UILabel!
     @IBOutlet weak var lbl2: UILabel!
     @IBOutlet weak var lbl3: UILabel!
@@ -34,7 +36,7 @@ class SurveyResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //labels set to data from survey
         lbl1.text = attSkills
         lbl2.text = proSpeedSkills
         lbl3.text = audProSkills
@@ -52,7 +54,5 @@ class SurveyResultsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
 }
