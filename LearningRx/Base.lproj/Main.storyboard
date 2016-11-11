@@ -90,7 +90,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="YrA-4x-OyE" id="RSc-aL-uKm"/>
+                        <outlet property="label" destination="YrA-4x-OyE" id="euI-lW-3WU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inu-qj-fzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
