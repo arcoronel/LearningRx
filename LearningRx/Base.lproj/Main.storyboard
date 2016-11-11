@@ -70,7 +70,7 @@
         <!--Research-->
         <scene sceneID="R2G-MN-03p">
             <objects>
-                <viewController title="Research" id="jXm-aa-t42" sceneMemberID="viewController">
+                <viewController title="Research" id="jXm-aa-t42" customClass="ResearchViewController" customModule="LearningRx" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yoe-TP-E9x"/>
                         <viewControllerLayoutGuide type="bottom" id="LP1-xH-wQe"/>
@@ -86,9 +86,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isf-Nv-EY0">
+                                <frame key="frameInset" minX="381" minY="246" width="262" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="PDF Test"/>
+                                <connections>
+                                    <action selector="displayPDF:" destination="jXm-aa-t42" eventType="touchUpInside" id="DY3-ln-4jJ"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvE-Ir-dHX">
+                                <frame key="frameInset" minX="651" minY="246" width="313" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myWebView" destination="mvE-Ir-dHX" id="d4L-YI-qta"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0vi-HV-h4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
