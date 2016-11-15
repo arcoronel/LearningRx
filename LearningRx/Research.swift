@@ -13,7 +13,8 @@ class ResearchViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var tableView: UITableView!
     var topics = ["Topic 1","Topic 2","Topic 3"]
-    //var identities = ["test","test2","test3"]
+    var identities = ["test","test2","test3"]
+    var selectedIdentity = String()
     var selectedTopic = String()
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(topics.count)
@@ -35,6 +36,7 @@ class ResearchViewController: UIViewController, UITableViewDataSource, UITableVi
 //        let request = URLRequest(url: fileURL)
 //        myWebView.loadRequest(request)
         selectedTopic = topics[indexPath.row]
+        selectedIdentity = identities[indexPath.row]
         self.performSegue(withIdentifier: "articleSegue", sender: self)
     }
     
@@ -52,6 +54,7 @@ class ResearchViewController: UIViewController, UITableViewDataSource, UITableVi
         //send data to results page
         let ravc  : ResearchArticleViewController = segue.destination as! ResearchArticleViewController
         ravc.topic = selectedTopic
+        ravc.fileName = selectedIdentity
     }
     //@IBOutlet weak var myWebView: UIWebView!
 //    @IBAction func displayPDF(_ sender: AnyObject) {
@@ -61,5 +64,30 @@ class ResearchViewController: UIViewController, UITableViewDataSource, UITableVi
 //        myWebView.loadRequest(request)
 //        
 //    }
+    
+}
+
+class DisplayArticleViewController: UIViewController {
+    
+    var fileName = String()
+    
+    @IBOutlet weak var myWebView: UIWebView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        let filePath = Bundle.main.path(forResource: fileName, ofType: "pdf")
+        let fileURL = URL(fileURLWithPath: filePath!)
+        let request = URLRequest(url: fileURL)
+        myWebView.loadRequest(request)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
     
 }
