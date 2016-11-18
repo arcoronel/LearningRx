@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
-class SurveyResultsViewController: UIViewController {
+class SurveyResultsViewController: UIViewController, MFMailComposeViewControllerDelegate {
     //variables to store data from survey
     var attSkills = String()
     var proSpeedSkills = String()
@@ -50,9 +51,29 @@ class SurveyResultsViewController: UIViewController {
         personlbl.text = "You Choose: " + person
     }
     
+   // @IBOutlet weak var emailField: UITextField!
+    
+    //@IBAction func sendEmail(_ sender: AnyObject) {
+
+       // let mailVC = MFMailComposeViewController()
+       // mailVC.mailComposeDelegate = self
+       // mailVC.setToRecipients([])
+        //mailVC.setSubject("LSRS Survey")
+        //mailVC.setMessageBody("Attention Skills = " + attSkills, isHTML: false)
+        
+       // present(mailVC, animated: true, completion: nil)
+   // }
+        
+        // MARK: - Email Delegate
+        
+        //func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+       //     controller.dismiss(animated: true, completion: nil)
+        //}
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 }
+
