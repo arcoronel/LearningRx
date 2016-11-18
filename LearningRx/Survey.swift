@@ -110,14 +110,14 @@ class SurveyViewController: UIViewController {
     
     //variables for survey
     var person = String()
-    var q1: Int = 0
-    var q2: Int = 0
-    var q3: Int = 0
-    var q4: Int = 0
-    var q5: Int = 0
-    var q6: Int = 0
-    var q7: Int = 0
-    var q8: Int = 0
+    var q1: Int? = nil
+    var q2: Int? = nil
+    var q3: Int? = nil
+    var q4: Int? = nil
+    var q5: Int? = nil
+    var q6: Int? = nil
+    var q7: Int? = nil
+    var q8: Int? = nil
     var qIndex: Int = 7
     var attentionSkills: Int = 0
     var proccessingSpeedSkills: Int = 0
@@ -406,7 +406,7 @@ class SurveyViewController: UIViewController {
         //Action when clicking next button
         //for all question sets when next is clicked all button selections are cleared and score is calculated
         //after question 8 pass all values to results page and navigate to results page
-        if qSet <= 7 {
+        if (qSet <= 7) && (q1 != nil) && (q2 != nil) && (q3 != nil) && (q4 != nil) && (q5 != nil) && (q6 != nil) && (q7 != nil) && (q8 != nil) {
             //reseting buttons
             selectedButton(selected: 6, button1: btn1, button2: btn2, button3: btn3, button4: btn4, button5: btn5)
             selectedButton(selected: 6, button1: btn6, button2: btn7, button3: btn8, button4: btn9, button5: btn10)
@@ -418,47 +418,47 @@ class SurveyViewController: UIViewController {
             selectedButton(selected: 6, button1: btn36, button2: btn37, button3: btn38, button4: btn39, button5: btn40)
             //Calculating scores
             if qSet == 0 || qSet == 1 || qSet == 2 || qSet == 3{
-                attentionSkills = attentionSkills + q1 + q5
-                proccessingSpeedSkills = proccessingSpeedSkills + q2 + q6
-                auditoryProcessingSkills = auditoryProcessingSkills + q3 + q7
-                memorySkills = memorySkills + q4 + q8
+                attentionSkills = attentionSkills + q1! + q5!
+                proccessingSpeedSkills = proccessingSpeedSkills + q2! + q6!
+                auditoryProcessingSkills = auditoryProcessingSkills + q3! + q7!
+                memorySkills = memorySkills + q4! + q8!
                 if qSet == 0 {
-                    workOrAcademicPerformance = workOrAcademicPerformance + q3
+                    workOrAcademicPerformance = workOrAcademicPerformance + q3!
                 }
                 else if qSet == 1 {
-                    workOrAcademicPerformance = workOrAcademicPerformance + q8
+                    workOrAcademicPerformance = workOrAcademicPerformance + q8!
                 }
                 else if qSet == 2 {
-                    workOrAcademicPerformance = workOrAcademicPerformance + q2 + q8
+                    workOrAcademicPerformance = workOrAcademicPerformance + q2! + q8!
                 }
                 else if qSet == 3 {
-                    workOrAcademicPerformance = workOrAcademicPerformance + q6
+                    workOrAcademicPerformance = workOrAcademicPerformance + q6!
                 }
             }
             else if qSet == 4 || qSet == 5 || qSet == 6 || qSet == 7 {
-                visualProcessingSkills = visualProcessingSkills + q1 + q5
-                logicAndReasoningSkills = logicAndReasoningSkills + q2 + q6
-                sensoryMotorSkills = sensoryMotorSkills + q3 + q7
-                oppositionalBehavior = oppositionalBehavior + q4 + q8
+                visualProcessingSkills = visualProcessingSkills + q1! + q5!
+                logicAndReasoningSkills = logicAndReasoningSkills + q2! + q6!
+                sensoryMotorSkills = sensoryMotorSkills + q3! + q7!
+                oppositionalBehavior = oppositionalBehavior + q4! + q8!
                 if qSet == 4 {
-                    workOrAcademicPerformance = workOrAcademicPerformance + q2
+                    workOrAcademicPerformance = workOrAcademicPerformance + q2!
                 }
                 else if qSet == 6 {
-                    workOrAcademicPerformance = workOrAcademicPerformance + q6
+                    workOrAcademicPerformance = workOrAcademicPerformance + q6!
                 }
                 else if qSet == 7 {
-                    workOrAcademicPerformance = workOrAcademicPerformance + q8
+                    workOrAcademicPerformance = workOrAcademicPerformance + q8!
                 }
             }
             //reset all question values for next question because at this point if a user doesn't select a button then the value will carry to next set of questions invalidating data
-            q1 = 0
-            q2 = 0
-            q3 = 0
-            q4 = 0
-            q5 = 0
-            q6 = 0
-            q7 = 0
-            q8 = 0
+            q1 = nil
+            q2 = nil
+            q3 = nil
+            q4 = nil
+            q5 = nil
+            q6 = nil
+            q7 = nil
+            q8 = nil
             //move to next set
             qSet = qSet + 1
             //if question set is not 8 set labels to new questions
@@ -480,6 +480,11 @@ class SurveyViewController: UIViewController {
                 progress = Int((Double(qSet) / 8) * 100)
                 progresslbl.text = "Progress: " + String(progress) + "%"
             }
+        }
+        else{
+            let alert = UIAlertController(title: "", message: "Please answer all questions", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
