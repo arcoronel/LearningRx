@@ -49,6 +49,7 @@ class SurveyResultsViewController: UIViewController {
         lbl9.text = workOrAcaPerformance
         navigationItem.hidesBackButton = true
         personlbl.text = "You Choose: " + person
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     @IBOutlet weak var emailField: UITextField?

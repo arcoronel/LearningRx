@@ -20,6 +20,7 @@ class ResearchArticleViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         label.text = topic
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func didReceiveMemoryWarning() {

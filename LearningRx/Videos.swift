@@ -15,7 +15,7 @@ class VideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         let filePath = Bundle.main.path(forResource: "video", ofType: "mp4")
         let videoURL = URL(fileURLWithPath: filePath!)
         let player = AVPlayer(url: videoURL)

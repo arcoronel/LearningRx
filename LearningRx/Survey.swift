@@ -205,7 +205,7 @@ class SurveyViewController: UIViewController {
         qSet = 0
         progress = 0
         progresslbl.text = "Progress: " + String(progress) + "%"
-        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     @IBAction func button1Pressed(_ sender: AnyObject) {

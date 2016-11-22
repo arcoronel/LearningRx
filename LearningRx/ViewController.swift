@@ -12,10 +12,14 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var open: UIBarButtonItem!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.hidesBackButton = true
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 
     override func didReceiveMemoryWarning() {

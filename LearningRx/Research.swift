@@ -43,7 +43,7 @@ class ResearchViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,7 +76,7 @@ class DisplayArticleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         let filePath = Bundle.main.path(forResource: fileName, ofType: "pdf")
         let fileURL = URL(fileURLWithPath: filePath!)
         let request = URLRequest(url: fileURL)

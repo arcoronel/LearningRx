@@ -42,6 +42,7 @@ class SurveyStartViewController: UIViewController {
         //default for when start survey is started
         selectedButton(selected: 1, button1: btn1, button2: btn2, button3: btn3)
         person = "Self"
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
