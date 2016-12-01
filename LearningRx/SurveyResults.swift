@@ -8,9 +8,9 @@
 
 import Foundation
 import UIKit
-//import MessageUI
+import MessageUI
 
-class SurveyResultsViewController: UIViewController{
+class SurveyResultsViewController: UIViewController, MFMailComposeViewControllerDelegate{
     //variables to store data from survey
     var attSkills = String()
     var proSpeedSkills = String()
@@ -34,6 +34,7 @@ class SurveyResultsViewController: UIViewController{
     @IBOutlet weak var lbl8: UILabel!
     @IBOutlet weak var lbl9: UILabel!
     @IBOutlet weak var personlbl: UILabel!
+    @IBOutlet weak var emailString: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,20 +53,24 @@ class SurveyResultsViewController: UIViewController{
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
-   //@IBAction func sendEmail(_ sender: AnyObject) {
-        //let text: String = emailField!.text!
-        
-        //let email = MFMailComposeViewController()
-        //email.mailComposeDelegate = self
-        //email.setSubject("LSRS Survey Results")
-        //email.setMessageBody("Attention Skills = " + attSkills, isHTML: false)
-        //email.setToRecipients([text]) // the recipient email address
-        //if MFMailComposeViewController.canSendMail() {
-           // present(email, animated: true, completion: nil)
-       //}
+    @IBAction func sendEmail(_ sender: AnyObject) {
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+        }
+    }
     
-//}
-
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        
+        mailComposerVC.setToRecipients([self.emailString.text!])
+        mailComposerVC.setSubject("LSRS Survey Results")
+        mailComposerVC.setMessageBody("Attention skills: " + attSkills, isHTML: false)
+        
+        return mailComposerVC
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
