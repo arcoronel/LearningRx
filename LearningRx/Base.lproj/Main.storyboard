@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jb2-gX-Qms">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jb2-gX-Qms">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -1291,8 +1291,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="Email:" destination="Bgs-Ki-Wg9" eventType="touchUpInside" id="gVO-ZM-bYe"/>
-                                    <action selector="sendEmail:" destination="Bgs-Ki-Wg9" eventType="touchUpInside" id="JvV-CA-Rlw"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="YiO-bl-8Qc"/>
                                 </connections>
                             </button>
@@ -1335,8 +1333,6 @@
                         <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="email" destination="cfA-7d-eHh" id="vND-F3-dLT"/>
-                        <outlet property="emailField" destination="cfA-7d-eHh" id="swy-2z-fad"/>
                         <outlet property="lbl1" destination="vLh-qD-AEu" id="BpA-68-cnG"/>
                         <outlet property="lbl2" destination="QhE-k1-BKM" id="gBq-Hd-pL7"/>
                         <outlet property="lbl3" destination="2zN-5E-eAm" id="JM0-9O-njd"/>
@@ -1462,9 +1458,9 @@
         <image name="LearningRx Logo-RGB-no tag" width="1850" height="405"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kh6-o9-0Du"/>
+        <segue reference="MsS-uZ-RtA"/>
         <segue reference="fBY-he-H08"/>
         <segue reference="ob9-P2-8Vz"/>
-        <segue reference="MsS-uZ-RtA"/>
+        <segue reference="YiO-bl-8Qc"/>
     </inferredMetricsTieBreakers>
 </document>

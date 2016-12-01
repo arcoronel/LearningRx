@@ -8,9 +8,9 @@
 
 import Foundation
 import UIKit
-import MessageUI
+//import MessageUI
 
-class SurveyResultsViewController: UIViewController {
+class SurveyResultsViewController: UIViewController{
     //variables to store data from survey
     var attSkills = String()
     var proSpeedSkills = String()
@@ -51,9 +51,6 @@ class SurveyResultsViewController: UIViewController {
         personlbl.text = "You Choose: " + person
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
-    
-    @IBOutlet weak var emailField: UITextField?
-    
     
    //@IBAction func sendEmail(_ sender: AnyObject) {
         //let text: String = emailField!.text!
