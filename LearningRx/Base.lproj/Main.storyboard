@@ -1291,7 +1291,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="YiO-bl-8Qc"/>
+                                    <action selector="sendEmail:" destination="Bgs-Ki-Wg9" eventType="touchUpInside" id="ZoH-vB-bE3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Once &quot;Done&quot; is clicked all data from survey will be deleted. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WT-aq-e5I">
@@ -1329,14 +1329,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m17-2V-o6Q">
-                                <frame key="frameInset" minX="445" minY="560" width="135" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send Email"/>
-                                <connections>
-                                    <action selector="sendEmail:" destination="Bgs-Ki-Wg9" eventType="touchUpInside" id="kpt-3O-4Uo"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1352,6 +1344,7 @@
                         <outlet property="lbl8" destination="sZ3-Qg-NYw" id="1mF-ej-iaN"/>
                         <outlet property="lbl9" destination="B01-pa-mOI" id="OQg-ts-9xB"/>
                         <outlet property="personlbl" destination="cRL-uI-frD" id="5NW-6K-n3g"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="surveyHome" id="V8q-al-oPv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCz-5f-AGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1470,6 +1463,6 @@
         <segue reference="MsS-uZ-RtA"/>
         <segue reference="fBY-he-H08"/>
         <segue reference="ob9-P2-8Vz"/>
-        <segue reference="YiO-bl-8Qc"/>
+        <segue reference="V8q-al-oPv"/>
     </inferredMetricsTieBreakers>
 </document>

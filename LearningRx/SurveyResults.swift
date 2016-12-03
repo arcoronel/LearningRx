@@ -54,21 +54,33 @@ class SurveyResultsViewController: UIViewController, MFMailComposeViewController
     }
     
     @IBAction func sendEmail(_ sender: AnyObject) {
+        if((emailString.text) != ""){
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
             self.present(mailComposeViewController, animated: true, completion: nil)
         }
+        } else{
+            performSegue(withIdentifier: "surveyHome", sender: self)
+        }
     }
-    
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
         mailComposerVC.setToRecipients([self.emailString.text!])
         mailComposerVC.setSubject("LSRS Survey Results")
-        mailComposerVC.setMessageBody("Attention skills: " + attSkills, isHTML: false)
+        mailComposerVC.setMessageBody("Attention skills: " + attSkills + "\nProcessing Speed Skills: " + proSpeedSkills + "\nAuditory Processing Skills: "
+            + audProSkills + "\nMemory Skills: " + memSkills + "\nVisual Processing Skills: " + visProSkills + "\nLogic And Reasoning Skills: " + logAndReasoningSkills
+            + "\nSensory Motor Skills: " + senMotorSkills + "\nOppositional Behavior Skills: " + oppBehavior + "\nWork or Academic Performance: " + workOrAcaPerformance, isHTML: false)
         
         return mailComposerVC
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+        
+        performSegue(withIdentifier: "surveyHome", sender: self)
+        
     }
     
     override func didReceiveMemoryWarning() {
