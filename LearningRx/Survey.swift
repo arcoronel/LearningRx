@@ -401,6 +401,9 @@ class SurveyViewController: UIViewController {
         srvc.workOrAcaPerformance = String(workOrAcademicPerformance)
         srvc.person = person
     }
+    @IBAction func forDemonstrationBtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "surveyResultsSegue", sender: self)
+    }
     
     @IBAction func nextQuestions(_ sender: AnyObject) {
         //Action when clicking next button
