@@ -23,6 +23,9 @@
 		A05AC54F1DE4C44E00FDF84C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05AC54E1DE4C44E00FDF84C /* SWRevealViewController.m */; };
 		A0748D031DCAC0A800F393D4 /* SurveyResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0748D021DCAC0A800F393D4 /* SurveyResults.swift */; };
 		A0B932D51DDAD95A00D88B44 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B932D41DDAD95A00D88B44 /* Videos.swift */; };
+		A0BFA1C01DF66C140032BE7B /* research_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA1BD1DF66C140032BE7B /* research_btn.png */; };
+		A0BFA1C11DF66C140032BE7B /* survey_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA1BE1DF66C140032BE7B /* survey_btn.png */; };
+		A0BFA1C21DF66C140032BE7B /* video_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA1BF1DF66C140032BE7B /* video_btn.png */; };
 		DC57304F1DD54B4400B9763C /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC57304E1DD54B4400B9763C /* video.mp4 */; };
 		DC5730511DD5591200B9763C /* Research.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5730501DD5591200B9763C /* Research.swift */; };
 		DC5730531DD561F700B9763C /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC5730521DD561F700B9763C /* test.pdf */; };
@@ -71,6 +74,9 @@
 		A05AC54E1DE4C44E00FDF84C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A0748D021DCAC0A800F393D4 /* SurveyResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyResults.swift; sourceTree = "<group>"; };
 		A0B932D41DDAD95A00D88B44 /* Videos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
+		A0BFA1BD1DF66C140032BE7B /* research_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = research_btn.png; sourceTree = "<group>"; };
+		A0BFA1BE1DF66C140032BE7B /* survey_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = survey_btn.png; sourceTree = "<group>"; };
+		A0BFA1BF1DF66C140032BE7B /* video_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_btn.png; sourceTree = "<group>"; };
 		DC57304E1DD54B4400B9763C /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		DC5730501DD5591200B9763C /* Research.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Research.swift; sourceTree = "<group>"; };
 		DC5730521DD561F700B9763C /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 			children = (
 				DC5730521DD561F700B9763C /* test.pdf */,
 				A036BC921DD668790004C898 /* test2.pdf */,
+				A0BFA1BD1DF66C140032BE7B /* research_btn.png */,
+				A0BFA1BE1DF66C140032BE7B /* survey_btn.png */,
+				A0BFA1BF1DF66C140032BE7B /* video_btn.png */,
 				A036BC941DD6688A0004C898 /* test3.pdf */,
 				DC57304E1DD54B4400B9763C /* video.mp4 */,
 				A00DD70B1DA5C63C008A5FD0 /* AppDelegate.swift */,
@@ -231,7 +240,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = LearningRx;
 				TargetAttributes = {
 					A00DD7071DA5C63C008A5FD0 = {
@@ -278,8 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00DD7161DA5C63C008A5FD0 /* LaunchScreen.storyboard in Resources */,
+				A0BFA1C11DF66C140032BE7B /* survey_btn.png in Resources */,
+				A0BFA1C21DF66C140032BE7B /* video_btn.png in Resources */,
 				A00DD7131DA5C63C008A5FD0 /* Assets.xcassets in Resources */,
 				A036BC951DD6688A0004C898 /* test3.pdf in Resources */,
+				A0BFA1C01DF66C140032BE7B /* research_btn.png in Resources */,
 				A00DD7111DA5C63C008A5FD0 /* Main.storyboard in Resources */,
 				DC57304F1DD54B4400B9763C /* video.mp4 in Resources */,
 				DC5730531DD561F700B9763C /* test.pdf in Resources */,
@@ -391,6 +403,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -441,6 +454,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
