@@ -13,7 +13,7 @@ class ResearchViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var tableView: UITableView!
     var topics = ["Brain Training Magazine","Client Outcome Report","Root Cause Magazine National Version"]
-    var identities = ["brain_training_magazine","ClientOutcomeReport","root_cause_magazine_National_version"]
+    var identities = ["brain_training_magazine","ClientOutcomesReport","root_cause_magazine_National_version"]
     var selectedIdentity = String()
     var selectedTopic = String()
     

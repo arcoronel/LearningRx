@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.navigationController?.isNavigationBarHidden  = true
     }
     
     override func didReceiveMemoryWarning() {
