@@ -18,10 +18,12 @@
 		A036BC911DD65FEC0004C898 /* ResearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036BC901DD65FEC0004C898 /* ResearchTableViewCell.swift */; };
 		A036BC931DD668790004C898 /* test2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A036BC921DD668790004C898 /* test2.pdf */; };
 		A036BC951DD6688A0004C898 /* test3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A036BC941DD6688A0004C898 /* test3.pdf */; };
-		A036BC9F1DD683CB0004C898 /* ResearchArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036BC9E1DD683CB0004C898 /* ResearchArticles.swift */; };
 		A05201E21DE4EB8900B6F930 /* BackTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05201E11DE4EB8900B6F930 /* BackTable.swift */; };
 		A05AC54F1DE4C44E00FDF84C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05AC54E1DE4C44E00FDF84C /* SWRevealViewController.m */; };
 		A0748D031DCAC0A800F393D4 /* SurveyResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0748D021DCAC0A800F393D4 /* SurveyResults.swift */; };
+		A0B484231DF7FC6F004620FB /* root_cause_magazine_National_version.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A0B484211DF7FC6F004620FB /* root_cause_magazine_National_version.pdf */; };
+		A0B484241DF7FC6F004620FB /* brain_training_magazine.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A0B484221DF7FC6F004620FB /* brain_training_magazine.pdf */; };
+		A0B484261DF801AA004620FB /* ClientOutcomesReport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A0B484251DF801AA004620FB /* ClientOutcomesReport.pdf */; };
 		A0B932D51DDAD95A00D88B44 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B932D41DDAD95A00D88B44 /* Videos.swift */; };
 		A0BFA1C01DF66C140032BE7B /* research_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA1BD1DF66C140032BE7B /* research_btn.png */; };
 		A0BFA1C11DF66C140032BE7B /* survey_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA1BE1DF66C140032BE7B /* survey_btn.png */; };
@@ -67,12 +69,14 @@
 		A036BC901DD65FEC0004C898 /* ResearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchTableViewCell.swift; sourceTree = "<group>"; };
 		A036BC921DD668790004C898 /* test2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test2.pdf; sourceTree = "<group>"; };
 		A036BC941DD6688A0004C898 /* test3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test3.pdf; sourceTree = "<group>"; };
-		A036BC9E1DD683CB0004C898 /* ResearchArticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchArticles.swift; sourceTree = "<group>"; };
 		A05201E11DE4EB8900B6F930 /* BackTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTable.swift; sourceTree = "<group>"; };
 		A05AC54C1DE4C44D00FDF84C /* LearningRx-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearningRx-Bridging-Header.h"; sourceTree = "<group>"; };
 		A05AC54D1DE4C44E00FDF84C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A05AC54E1DE4C44E00FDF84C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A0748D021DCAC0A800F393D4 /* SurveyResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyResults.swift; sourceTree = "<group>"; };
+		A0B484211DF7FC6F004620FB /* root_cause_magazine_National_version.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = root_cause_magazine_National_version.pdf; sourceTree = "<group>"; };
+		A0B484221DF7FC6F004620FB /* brain_training_magazine.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = brain_training_magazine.pdf; sourceTree = "<group>"; };
+		A0B484251DF801AA004620FB /* ClientOutcomesReport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ClientOutcomesReport.pdf; sourceTree = "<group>"; };
 		A0B932D41DDAD95A00D88B44 /* Videos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		A0BFA1BD1DF66C140032BE7B /* research_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = research_btn.png; sourceTree = "<group>"; };
 		A0BFA1BE1DF66C140032BE7B /* survey_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = survey_btn.png; sourceTree = "<group>"; };
@@ -136,6 +140,9 @@
 				A0BFA1BD1DF66C140032BE7B /* research_btn.png */,
 				A0BFA1BE1DF66C140032BE7B /* survey_btn.png */,
 				A0BFA1BF1DF66C140032BE7B /* video_btn.png */,
+				A0B484251DF801AA004620FB /* ClientOutcomesReport.pdf */,
+				A0B484211DF7FC6F004620FB /* root_cause_magazine_National_version.pdf */,
+				A0B484221DF7FC6F004620FB /* brain_training_magazine.pdf */,
 				A036BC941DD6688A0004C898 /* test3.pdf */,
 				DC57304E1DD54B4400B9763C /* video.mp4 */,
 				A00DD70B1DA5C63C008A5FD0 /* AppDelegate.swift */,
@@ -145,7 +152,6 @@
 				A0B932D41DDAD95A00D88B44 /* Videos.swift */,
 				DC5730501DD5591200B9763C /* Research.swift */,
 				A036BC901DD65FEC0004C898 /* ResearchTableViewCell.swift */,
-				A036BC9E1DD683CB0004C898 /* ResearchArticles.swift */,
 				DCFB46D61DCBE39A0060350F /* SurveyStart.swift */,
 				A00956631DC179ED00530734 /* Survey.swift */,
 				A0748D021DCAC0A800F393D4 /* SurveyResults.swift */,
@@ -286,10 +292,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B484231DF7FC6F004620FB /* root_cause_magazine_National_version.pdf in Resources */,
 				A00DD7161DA5C63C008A5FD0 /* LaunchScreen.storyboard in Resources */,
 				A0BFA1C11DF66C140032BE7B /* survey_btn.png in Resources */,
 				A0BFA1C21DF66C140032BE7B /* video_btn.png in Resources */,
 				A00DD7131DA5C63C008A5FD0 /* Assets.xcassets in Resources */,
+				A0B484241DF7FC6F004620FB /* brain_training_magazine.pdf in Resources */,
+				A0B484261DF801AA004620FB /* ClientOutcomesReport.pdf in Resources */,
 				A036BC951DD6688A0004C898 /* test3.pdf in Resources */,
 				A0BFA1C01DF66C140032BE7B /* research_btn.png in Resources */,
 				A00DD7111DA5C63C008A5FD0 /* Main.storyboard in Resources */,
@@ -326,7 +335,6 @@
 				A00DD70E1DA5C63C008A5FD0 /* ViewController.swift in Sources */,
 				DC5730511DD5591200B9763C /* Research.swift in Sources */,
 				A0748D031DCAC0A800F393D4 /* SurveyResults.swift in Sources */,
-				A036BC9F1DD683CB0004C898 /* ResearchArticles.swift in Sources */,
 				A0B932D51DDAD95A00D88B44 /* Videos.swift in Sources */,
 				A05AC54F1DE4C44E00FDF84C /* SWRevealViewController.m in Sources */,
 				DCFB46D71DCBE39A0060350F /* SurveyStart.swift in Sources */,

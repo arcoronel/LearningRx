@@ -131,7 +131,7 @@ class SurveyViewController: UIViewController {
     var qSet: Int = 0
     var progress: Int = 0
     // Survey questions
-    var questions: [String] = ["Distracted from the task at hand","Reading is slow","Poor reading comprehension","Often asks to have things repeated","has difficulty maintaining attention","Slow, deliberate speech", "Makes spelling errors in written assignments","Has difficulty remembering telephone numbers",
+    var questions: [String] = ["Distracted from the task at hand","Reading is slow","Poor reading comprehension","Often asks to have things repeated","Has difficulty maintaining attention","Slow, deliberate speech", "Makes spelling errors in written assignments","Has difficulty remembering telephone numbers",
         "Has difficulty organizing activities",
         "Completes math assignments slowly",
         "Has difficulty sounding out unknown words",
