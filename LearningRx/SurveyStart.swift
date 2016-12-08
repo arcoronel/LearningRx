@@ -31,6 +31,7 @@ func selectedButton(selected: Int,button1: UIButton,button2: UIButton,button3: U
 class SurveyStartViewController: UIViewController {
     
     //Outlets
+    @IBOutlet weak var openMenu: UIButton!
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var btn3: UIButton!
@@ -43,6 +44,7 @@ class SurveyStartViewController: UIViewController {
         selectedButton(selected: 1, button1: btn1, button2: btn2, button3: btn3)
         person = "Self"
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        openMenu.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

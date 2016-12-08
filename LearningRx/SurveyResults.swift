@@ -35,6 +35,7 @@ class SurveyResultsViewController: UIViewController, MFMailComposeViewController
     @IBOutlet weak var lbl9: UILabel!
     @IBOutlet weak var personlbl: UILabel!
     @IBOutlet weak var emailString: UITextField!
+    @IBOutlet weak var openMenu: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,7 @@ class SurveyResultsViewController: UIViewController, MFMailComposeViewController
         navigationItem.hidesBackButton = true
         personlbl.text = "You Choose: " + person
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        openMenu.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
     
     @IBAction func sendEmail(_ sender: AnyObject) {

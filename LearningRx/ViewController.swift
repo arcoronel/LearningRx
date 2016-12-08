@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.navigationController?.isNavigationBarHidden  = true
+        openMenu.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
     
     

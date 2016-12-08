@@ -11,6 +11,7 @@ import UIKit
 
 class ResearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var openMenu: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var topics = ["Brain Training Magazine","Client Outcome Report","Root Cause Magazine National Version"]
     var identities = ["brain_training_magazine","ClientOutcomesReport","root_cause_magazine_National_version"]
@@ -21,6 +22,7 @@ class ResearchViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        openMenu.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,11 +61,13 @@ class DisplayArticleViewController: UIViewController {
     var topicTitle = String()
     @IBOutlet weak var myWebView: UIWebView!
     @IBOutlet weak var pdfTitle: UILabel!
+    @IBOutlet weak var openMenu: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        openMenu.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         let filePath = Bundle.main.path(forResource: fileName, ofType: "pdf")
         let fileURL = URL(fileURLWithPath: filePath!)
         let request = URLRequest(url: fileURL)

@@ -11,11 +11,17 @@ import AVKit
 import AVFoundation
 
 class VideoViewController: UIViewController {
+    
+    @IBOutlet weak var openMenu: UIButton!
+    
     var playerViewController = AVPlayerViewController()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        openMenu.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         let filePath = Bundle.main.path(forResource: "video", ofType: "mp4")
         let videoURL = URL(fileURLWithPath: filePath!)
         let player = AVPlayer(url: videoURL)

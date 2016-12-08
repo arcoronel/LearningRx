@@ -107,6 +107,7 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var lbl7: UILabel!
     @IBOutlet weak var lbl8: UILabel!
     @IBOutlet weak var progresslbl: UILabel!
+    @IBOutlet weak var openMenu: UIButton!
     
     //variables for survey
     var person = String()
@@ -206,6 +207,7 @@ class SurveyViewController: UIViewController {
         progress = 0
         progresslbl.text = "Progress: " + String(progress) + "%"
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        openMenu.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
     
     @IBAction func button1Pressed(_ sender: AnyObject) {
