@@ -69,7 +69,7 @@ class SurveyResultsViewController: UIViewController, MFMailComposeViewController
         
         mailComposerVC.setToRecipients([self.emailString.text!])
         mailComposerVC.setSubject("LSRS Survey Results")
-        mailComposerVC.setMessageBody("Attention skills: " + attSkills + "\nProcessing Speed Skills: " + proSpeedSkills + "\nAuditory Processing Skills: "
+        mailComposerVC.setMessageBody("You took the test as " + person + "\n\nAttention skills: " + attSkills + "\nProcessing Speed Skills: " + proSpeedSkills + "\nAuditory Processing Skills: "
             + audProSkills + "\nMemory Skills: " + memSkills + "\nVisual Processing Skills: " + visProSkills + "\nLogic And Reasoning Skills: " + logAndReasoningSkills
             + "\nSensory Motor Skills: " + senMotorSkills + "\nOppositional Behavior Skills: " + oppBehavior + "\nWork or Academic Performance: " + workOrAcaPerformance, isHTML: false)
         
