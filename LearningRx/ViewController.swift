@@ -12,7 +12,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var open: UIBarButtonItem!
+    @IBOutlet weak var openMenu: UIButton!
     
     
     override func viewDidLoad() {
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.navigationController?.isNavigationBarHidden  = true
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
