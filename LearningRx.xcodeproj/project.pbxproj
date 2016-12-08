@@ -29,6 +29,8 @@
 		A0BFA1C21DF66C140032BE7B /* video_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A0BFA1BF1DF66C140032BE7B /* video_btn.png */; };
 		DC57304F1DD54B4400B9763C /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC57304E1DD54B4400B9763C /* video.mp4 */; };
 		DC5730511DD5591200B9763C /* Research.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5730501DD5591200B9763C /* Research.swift */; };
+		DC68844C1DF9D38700C0B387 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68844B1DF9D38700C0B387 /* Notes.swift */; };
+		DC68844E1DF9F32700C0B387 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68844D1DF9F32700C0B387 /* VideoTableViewCell.swift */; };
 		DCFB46D71DCBE39A0060350F /* SurveyStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB46D61DCBE39A0060350F /* SurveyStart.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		A0BFA1BF1DF66C140032BE7B /* video_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_btn.png; sourceTree = "<group>"; };
 		DC57304E1DD54B4400B9763C /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		DC5730501DD5591200B9763C /* Research.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Research.swift; sourceTree = "<group>"; };
+		DC68844B1DF9D38700C0B387 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		DC68844D1DF9F32700C0B387 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		DCFB46D61DCBE39A0060350F /* SurveyStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyStart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +146,8 @@
 				A00DD70B1DA5C63C008A5FD0 /* AppDelegate.swift */,
 				A00DD70D1DA5C63C008A5FD0 /* ViewController.swift */,
 				A00DD70F1DA5C63C008A5FD0 /* Main.storyboard */,
+				DC68844D1DF9F32700C0B387 /* VideoTableViewCell.swift */,
+				DC68844B1DF9D38700C0B387 /* Notes.swift */,
 				A05201E11DE4EB8900B6F930 /* BackTable.swift */,
 				A0B932D41DDAD95A00D88B44 /* Videos.swift */,
 				DC5730501DD5591200B9763C /* Research.swift */,
@@ -325,6 +331,8 @@
 				A036BC911DD65FEC0004C898 /* ResearchTableViewCell.swift in Sources */,
 				A05201E21DE4EB8900B6F930 /* BackTable.swift in Sources */,
 				A00DD70E1DA5C63C008A5FD0 /* ViewController.swift in Sources */,
+				DC68844C1DF9D38700C0B387 /* Notes.swift in Sources */,
+				DC68844E1DF9F32700C0B387 /* VideoTableViewCell.swift in Sources */,
 				DC5730511DD5591200B9763C /* Research.swift in Sources */,
 				A0748D031DCAC0A800F393D4 /* SurveyResults.swift in Sources */,
 				A0B932D51DDAD95A00D88B44 /* Videos.swift in Sources */,

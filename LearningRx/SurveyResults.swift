@@ -33,7 +33,6 @@ class SurveyResultsViewController: UIViewController, MFMailComposeViewController
     @IBOutlet weak var lbl7: UILabel!
     @IBOutlet weak var lbl8: UILabel!
     @IBOutlet weak var lbl9: UILabel!
-    @IBOutlet weak var personlbl: UILabel!
     @IBOutlet weak var emailString: UITextField!
     @IBOutlet weak var openMenu: UIButton!
     
@@ -50,7 +49,6 @@ class SurveyResultsViewController: UIViewController, MFMailComposeViewController
         lbl8.text = oppBehavior
         lbl9.text = workOrAcaPerformance
         navigationItem.hidesBackButton = true
-        personlbl.text = "You Choose: " + person
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         openMenu.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
