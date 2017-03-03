@@ -1,0 +1,6 @@
+framework module Pods_LearningRxCRM {
+  umbrella header "Pods-LearningRxCRM-umbrella.h"
+
+  export *
+  module * { export * }
+}
