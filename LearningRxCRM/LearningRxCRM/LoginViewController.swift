@@ -16,10 +16,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //size shit
         
 
-        //get meh back button damnit
+        //Back Button
         if let splitView = self.navigationController?.splitViewController, !splitView.isCollapsed {
             self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem
         }

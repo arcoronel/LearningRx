@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //get meh back button damnit
+        //Back Button
         if let splitView = self.navigationController?.splitViewController, !splitView.isCollapsed {
             self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem
         }

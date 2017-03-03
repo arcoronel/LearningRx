@@ -30,7 +30,7 @@ class SurveyViewController: UIViewController {
     var sensoryMotorSkills: Int = 0
     var oppositionalBehavior: Int = 0
  
-    //Changed to an Array of tuples because their system was dumb
+    //Changed to an Array of tuples
     //Also this would be better suted to another controller or even a CSV uploadable file so the quesitons could be changed and uploaded by the user
     /* 1 = attentionSkills
      * 2 = proccessingSpeedSkills
@@ -121,7 +121,7 @@ class SurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //smarter than the dumb way they did it (adds text for agreement buttons)
+        //Text for agreement buttons
         for (index, text) in agreementText.enumerated() {
             QAgree.setTitle(text, forSegmentAt: index)
         }
@@ -132,7 +132,7 @@ class SurveyViewController: UIViewController {
         QAgree.selectedSegmentIndex = 0
         
         
-        //get meh back button damnit
+        //get back button
         if let splitView = self.navigationController?.splitViewController, !splitView.isCollapsed {
             self.navigationItem.leftBarButtonItem = splitView.displayModeButtonItem
         }
