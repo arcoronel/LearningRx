@@ -54,4 +54,11 @@ class SurveyViewControllerTests: XCTestCase {
         XCTAssert(sut.QText.text == sut.surveyData.getQuestions()[1].question)
         XCTAssert(sut.currentQuestion == 1)
     }
+    
+    func testSurveyVC_NextButtonChangesTextOnLastQuestion() {
+        sut.currentQuestion = sut.surveyData.getQuestions().count - 3
+        sut.Next.sendActions(for: .touchUpInside)
+        XCTAssert(sut.currentQuestion == sut.surveyData.getQuestions().count - 2)
+        XCTAssert(sut.Next.currentTitle == "To Results")
+    }
 }

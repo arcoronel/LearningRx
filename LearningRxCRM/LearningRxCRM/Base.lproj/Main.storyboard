@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yGW-D2-LIO" id="6ej-cV-xEo">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -339,7 +339,7 @@
                                     <constraint firstAttribute="width" constant="200" id="Q2U-io-tVJ"/>
                                     <constraint firstAttribute="height" constant="200" id="StE-8G-k8e"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Images/survey_btn.png"/>
+                                <state key="normal" title="Button" image="survey_btn.png"/>
                                 <connections>
                                     <segue destination="98r-Lq-hsX" kind="show" id="BA7-Df-m9a"/>
                                 </connections>
@@ -350,7 +350,7 @@
                                     <constraint firstAttribute="height" constant="200" id="hwB-Bs-Kq3"/>
                                     <constraint firstAttribute="width" constant="200" id="k2Q-Z3-lyP"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Images/research_btn.png"/>
+                                <state key="normal" title="Button" image="research_btn.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-wP-rkB">
                                 <rect key="frame" x="492" y="412" width="200" height="200"/>
@@ -358,7 +358,7 @@
                                     <constraint firstAttribute="height" constant="200" id="XZV-5D-gpF"/>
                                     <constraint firstAttribute="width" constant="200" id="eX6-wL-ya7"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Images/video_btn.png"/>
+                                <state key="normal" title="Button" image="video_btn.png"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LearningRx Logo-RGB-no tag" translatesAutoresizingMaskIntoConstraints="NO" id="fxK-bd-7oi">
                                 <rect key="frame" x="84" y="223.5" width="600" height="131.5"/>
@@ -442,13 +442,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Images/research_btn.png" width="16" height="16"/>
-        <image name="Images/survey_btn.png" width="16" height="16"/>
-        <image name="Images/video_btn.png" width="16" height="16"/>
         <image name="LearningRx Logo-RGB-no tag" width="1850" height="405"/>
+        <image name="research_btn.png" width="481" height="480"/>
+        <image name="survey_btn.png" width="481" height="480"/>
+        <image name="video_btn.png" width="480" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gtP-ff-VQZ"/>
-        <segue reference="XP5-Pw-ZvF"/>
+        <segue reference="BA7-Df-m9a"/>
     </inferredMetricsTieBreakers>
 </document>
