@@ -45,15 +45,11 @@ class MasterTableViewController: UITableViewController {
     
     //select -> go there (can add some custom values if needed later)
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            self.performSegue(withIdentifier: "toHome", sender: nil)
-        case 1:
-            self.performSegue(withIdentifier: "toSurvey", sender: nil)
-        case 2:
-            self.performSegue(withIdentifier: "toLogin", sender: nil)
-        default:
-            break
+        
+        for (index, element) in tableData.enumerated() {
+            if (indexPath.row == index) {
+                self.performSegue(withIdentifier: "to" + element, sender: nil)
+            }
         }
     }
 
