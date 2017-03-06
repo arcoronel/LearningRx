@@ -22,6 +22,7 @@
 		ACDC4DC71E6CD438006B6B43 /* SurveyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */; };
 		ACDC4DCC1E6CDF58006B6B43 /* SurveyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC4DCB1E6CDF58006B6B43 /* SurveyModel.swift */; };
 		ACF6ABFC1E6CF5ED00582DFC /* SurveyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6ABFB1E6CF5ED00582DFC /* SurveyModelTests.swift */; };
+		D985454B1E6DC96200328957 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985454A1E6DC96200328957 /* LoginViewControllerTests.swift */; };
 		DAFB83DF55DC39F4BF6A82BC /* Pods_LearningRxCRMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2F708BE360DFBB35A963D /* Pods_LearningRxCRMTests.framework */; };
 		E0F051190EA5DE96D0241CC1 /* Pods_LearningRxCRM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20152A826FC337BEE551DCFE /* Pods_LearningRxCRM.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewControllerTests.swift; sourceTree = "<group>"; };
 		ACDC4DCB1E6CDF58006B6B43 /* SurveyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyModel.swift; sourceTree = "<group>"; };
 		ACF6ABFB1E6CF5ED00582DFC /* SurveyModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyModelTests.swift; sourceTree = "<group>"; };
+		D985454A1E6DC96200328957 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */,
+				D985454A1E6DC96200328957 /* LoginViewControllerTests.swift */,
 			);
 			path = TestControllers;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D985454B1E6DC96200328957 /* LoginViewControllerTests.swift in Sources */,
 				ACDC4DC71E6CD438006B6B43 /* SurveyViewControllerTests.swift in Sources */,
 				ACF6ABFC1E6CF5ED00582DFC /* SurveyModelTests.swift in Sources */,
 			);

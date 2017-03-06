@@ -41,6 +41,14 @@ class LoginViewController: UIViewController {
         var correctUsername = false
         var correctPassword = false
         
+        //lines 45-49 set up alerts to let the user know whether or not they logged in correctly
+        let alertSuccessController = UIAlertController(title: "LearningRX", message: "Successfully Logged In", preferredStyle: UIAlertControllerStyle.alert)
+        alertSuccessController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+        
+        let alertIncorrectController = UIAlertController(title: "LearningRX", message: "Username And/Or Password Incorrect", preferredStyle: UIAlertControllerStyle.alert)
+        alertIncorrectController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+        
+        
         if (inputUsername == functioningUsername){
             //correct username
             correctUsername = true
@@ -58,7 +66,15 @@ class LoginViewController: UIViewController {
         }
         
         if (correctUsername && correctPassword){
+            //logs in user
             loggedIn = true
+            self.present(alertSuccessController, animated: true, completion: nil)
         }
+        else{
+            //lets user know they did not log in properly
+            loggedIn = false
+            self.present(alertIncorrectController, animated: true, completion: nil)
+        }
+        
     }
 }
