@@ -14,6 +14,8 @@ class MasterTableViewController: UITableViewController {
     //array of static menu items
     var tableData = ["Home","Survey","Login"]
     var isLoadingTable = true
+    
+    var myLoginViewController = LoginViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,19 +47,40 @@ class MasterTableViewController: UITableViewController {
     
     //select -> go there (can add some custom values if needed later)
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            self.performSegue(withIdentifier: "toHome", sender: nil)
-        case 1:
-            self.performSegue(withIdentifier: "toSurvey", sender: nil)
-        case 2:
-            self.performSegue(withIdentifier: "toLogin", sender: nil)
-        default:
-            break
+        if (myLoginViewController.loggedIn == false){
+            switch indexPath.row {
+            case 0:
+                self.performSegue(withIdentifier: "toHome", sender: nil)
+            case 1:
+                self.performSegue(withIdentifier: "toSurvey", sender: nil)
+            case 2:
+                self.performSegue(withIdentifier: "toLogin", sender: nil)
+            default:
+                break
+            }
+            
+            if (myLoginViewController.loggedIn == true){
+                
+                tableData = ["Home","Survey","Events","Login"]
+                
+                switch indexPath.row {
+                case 0:
+                    self.performSegue(withIdentifier: "toHome", sender: nil)
+                case 1:
+                    self.performSegue(withIdentifier: "toSurvey", sender: nil)
+                case 2:
+                    self.performSegue(withIdentifier: "toEvents", sender: nil)
+                case 3:
+                    self.performSegue(withIdentifier: "toLogin", sender: nil)
+                default:
+                    break
+                }
+            }
         }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
 }
