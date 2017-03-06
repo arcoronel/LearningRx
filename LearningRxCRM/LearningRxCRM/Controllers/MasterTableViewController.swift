@@ -23,7 +23,7 @@ class MasterTableViewController: UITableViewController {
         
     }
     
-    //select first row by default (does not work if launched in portrait gurr)
+    //select first row by default (does not work if launched in portrait)
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if isLoadingTable && tableView.indexPathsForVisibleRows?.last?.row == indexPath.row {
             isLoadingTable = false
@@ -32,7 +32,7 @@ class MasterTableViewController: UITableViewController {
     }
     
     
-    //basic shit below
+    //basic operations
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData.count
     }
@@ -43,7 +43,7 @@ class MasterTableViewController: UITableViewController {
         return cell
     }
     
-    //select -> go there (we can add some custom shit too if we want)
+    //select -> go there (can add some custom values if needed later)
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:

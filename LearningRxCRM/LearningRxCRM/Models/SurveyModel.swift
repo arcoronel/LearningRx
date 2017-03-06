@@ -5,6 +5,7 @@
 //  Created by antiglow on 3/5/17.
 //  Copyright © 2017 LearningRx. All rights reserved.
 //
+//  Caleb Wood
 
 import Foundation
 
@@ -13,7 +14,6 @@ import Foundation
 struct SurveyData {
     
     //Changed to an Array of tuples
-    //Also this would be better suted to another controller or even a CSV uploadable file so the quesitons could be changed and uploaded by the user
     /* 1 = attentionSkills
      * 2 = proccessingSpeedSkills
      * 3 = auditoryProcessiongSkills
