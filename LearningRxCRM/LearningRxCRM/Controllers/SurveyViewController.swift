@@ -5,6 +5,7 @@
 //  Created by antiglow on 2/26/17.
 //  Copyright © 2017 LearningRx. All rights reserved.
 //
+// Caleb Wood
 
 import UIKit
 
@@ -21,6 +22,7 @@ class SurveyViewController: UIViewController {
     
     //model import (from SurveyModel.swift)
     var surveyData = SurveyData()
+    var questions: [(question: String, applicationArea: [Int])]!
     
     //metrics
     var attentionSkills: Int = 0
@@ -41,7 +43,7 @@ class SurveyViewController: UIViewController {
         
         
         let agreementText = surveyData.getAgreementOptions()
-        var questions = surveyData.getQuestions()
+        questions = surveyData.getQuestions()
         
         //Text for agreement buttons
         for (index, text) in agreementText.enumerated() {
@@ -77,7 +79,7 @@ class SurveyViewController: UIViewController {
 
     //on next adds resutls, updates progress, sets current question and checks if you are on last question or going to results
     @IBAction func nextQuestion(sender: UIButton) {
-        var questions = surveyData.getQuestions()
+        questions = surveyData.getQuestions()
         //change button text when on last question
         if (currentQuestion == questions.count - 2) {
             Next.setTitle("To Results", for: UIControlState.normal)
@@ -141,5 +143,4 @@ class SurveyViewController: UIViewController {
             }
         }
     }
-    
 }
