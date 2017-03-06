@@ -14,10 +14,11 @@
 		AC4964B01E629EDD00A6E6A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4964AF1E629EDD00A6E6A8 /* HomeViewController.swift */; };
 		AC4964B51E629EDD00A6E6A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4964B41E629EDD00A6E6A8 /* Assets.xcassets */; };
 		AC4964B81E629EDD00A6E6A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4964B61E629EDD00A6E6A8 /* LaunchScreen.storyboard */; };
-		AC4964C31E629EDD00A6E6A8 /* LearningRxCRMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4964C21E629EDD00A6E6A8 /* LearningRxCRMTests.swift */; };
 		AC4964CE1E629FFA00A6E6A8 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4964CD1E629FFA00A6E6A8 /* MasterTableViewController.swift */; };
 		AC5909E71E638DC300F3F644 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = AC5909E61E638DC300F3F644 /* Images */; };
 		AC5F7F8F1E6584E700C9BF88 /* SurveyResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F7F8E1E6584E700C9BF88 /* SurveyResultsViewController.swift */; };
+		ACDC4DC71E6CD438006B6B43 /* SurveyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */; };
+		ACDC4DCC1E6CDF58006B6B43 /* SurveyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC4DCB1E6CDF58006B6B43 /* SurveyModel.swift */; };
 		DAFB83DF55DC39F4BF6A82BC /* Pods_LearningRxCRMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA2F708BE360DFBB35A963D /* Pods_LearningRxCRMTests.framework */; };
 		E0F051190EA5DE96D0241CC1 /* Pods_LearningRxCRM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20152A826FC337BEE551DCFE /* Pods_LearningRxCRM.framework */; };
 /* End PBXBuildFile section */
@@ -49,11 +50,12 @@
 		AC4964B71E629EDD00A6E6A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC4964B91E629EDD00A6E6A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4964BE1E629EDD00A6E6A8 /* LearningRxCRMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningRxCRMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC4964C21E629EDD00A6E6A8 /* LearningRxCRMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningRxCRMTests.swift; sourceTree = "<group>"; };
 		AC4964C41E629EDD00A6E6A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4964CD1E629FFA00A6E6A8 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		AC5909E61E638DC300F3F644 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		AC5F7F8E1E6584E700C9BF88 /* SurveyResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyResultsViewController.swift; path = ../SurveyResultsViewController.swift; sourceTree = "<group>"; };
+		ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewControllerTests.swift; sourceTree = "<group>"; };
+		ACDC4DCB1E6CDF58006B6B43 /* SurveyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +121,10 @@
 		AC4964AC1E629EDD00A6E6A8 /* LearningRxCRM */ = {
 			isa = PBXGroup;
 			children = (
+				ACDC4DCA1E6CDF3E006B6B43 /* Models */,
 				AC5909E61E638DC300F3F644 /* Images */,
+				ACDC4DC81E6CDEBE006B6B43 /* Controllers */,
 				AC4964AD1E629EDD00A6E6A8 /* AppDelegate.swift */,
-				AC4964AF1E629EDD00A6E6A8 /* HomeViewController.swift */,
-				AC3DE5491E636C2B006C55F2 /* LoginViewController.swift */,
-				AC3DE54B1E63725E006C55F2 /* SurveyViewController.swift */,
-				AC5F7F8E1E6584E700C9BF88 /* SurveyResultsViewController.swift */,
-				AC4964CD1E629FFA00A6E6A8 /* MasterTableViewController.swift */,
 				AC1736041E62BCA1005A8E37 /* Main.storyboard */,
 				AC4964B41E629EDD00A6E6A8 /* Assets.xcassets */,
 				AC4964B61E629EDD00A6E6A8 /* LaunchScreen.storyboard */,
@@ -137,10 +136,46 @@
 		AC4964C11E629EDD00A6E6A8 /* LearningRxCRMTests */ = {
 			isa = PBXGroup;
 			children = (
-				AC4964C21E629EDD00A6E6A8 /* LearningRxCRMTests.swift */,
+				ACDC4DC51E6CD321006B6B43 /* TestModule */,
+				ACDC4DC41E6CD311006B6B43 /* TestControllers */,
 				AC4964C41E629EDD00A6E6A8 /* Info.plist */,
 			);
 			path = LearningRxCRMTests;
+			sourceTree = "<group>";
+		};
+		ACDC4DC41E6CD311006B6B43 /* TestControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */,
+			);
+			name = TestControllers;
+			sourceTree = "<group>";
+		};
+		ACDC4DC51E6CD321006B6B43 /* TestModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TestModule;
+			sourceTree = "<group>";
+		};
+		ACDC4DC81E6CDEBE006B6B43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC4964AF1E629EDD00A6E6A8 /* HomeViewController.swift */,
+				AC3DE5491E636C2B006C55F2 /* LoginViewController.swift */,
+				AC3DE54B1E63725E006C55F2 /* SurveyViewController.swift */,
+				AC5F7F8E1E6584E700C9BF88 /* SurveyResultsViewController.swift */,
+				AC4964CD1E629FFA00A6E6A8 /* MasterTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ACDC4DCA1E6CDF3E006B6B43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC4DCB1E6CDF58006B6B43 /* SurveyModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +238,7 @@
 					};
 					AC4964BD1E629EDD00A6E6A8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AC4964A91E629EDD00A6E6A8;
 					};
@@ -350,6 +386,7 @@
 				AC5F7F8F1E6584E700C9BF88 /* SurveyResultsViewController.swift in Sources */,
 				AC4964B01E629EDD00A6E6A8 /* HomeViewController.swift in Sources */,
 				AC4964CE1E629FFA00A6E6A8 /* MasterTableViewController.swift in Sources */,
+				ACDC4DCC1E6CDF58006B6B43 /* SurveyModel.swift in Sources */,
 				AC4964AE1E629EDD00A6E6A8 /* AppDelegate.swift in Sources */,
 				AC3DE54C1E63725E006C55F2 /* SurveyViewController.swift in Sources */,
 			);
@@ -359,7 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC4964C31E629EDD00A6E6A8 /* LearningRxCRMTests.swift in Sources */,
+				ACDC4DC71E6CD438006B6B43 /* SurveyViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,10 +555,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LearningRxCRMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.learningrx.LearningRxCRMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearningRxCRM.app/LearningRxCRM";
 			};
@@ -533,6 +572,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LearningRxCRMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.learningrx.LearningRxCRMTests;

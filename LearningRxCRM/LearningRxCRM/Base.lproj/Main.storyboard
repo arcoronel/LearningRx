@@ -22,7 +22,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wqp-Te-41B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1647" y="453"/>
+            <point key="canvasLocation" x="-1698" y="158"/>
         </scene>
         <!--Nav-->
         <scene sceneID="IX0-y0-cDR">
@@ -56,7 +56,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyM-cL-Y2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="87"/>
+            <point key="canvasLocation" x="20" y="-329"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="zcf-OL-xDT">
@@ -118,12 +118,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0XJ-Y1-Ddj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663" y="-278"/>
+            <point key="canvasLocation" x="1745" y="-942"/>
         </scene>
         <!--Survey View Controller-->
         <scene sceneID="UQO-wd-p13">
             <objects>
-                <viewController id="98r-Lq-hsX" customClass="SurveyViewController" customModule="LearningRxCRM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SurveyVC" id="98r-Lq-hsX" customClass="SurveyViewController" customModule="LearningRxCRM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iLo-k6-HNb"/>
                         <viewControllerLayoutGuide type="bottom" id="yyi-RD-ZBR"/>
@@ -198,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krq-Ho-gC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864.84375" y="1155.46875"/>
+            <point key="canvasLocation" x="952" y="943"/>
         </scene>
         <!--Survey Results View Controller-->
         <scene sceneID="a4H-15-x0l">
@@ -230,12 +230,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcJ-s7-qGE">
-                                <rect key="frame" x="206" y="593" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MV-8A-75U">
                                 <rect key="frame" x="363" y="593" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -262,6 +256,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dd-KC-qgo">
                                 <rect key="frame" x="520" y="411" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcJ-s7-qGE">
+                                <rect key="frame" x="206" y="593" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -303,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WrB-VV-JoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701" y="1155"/>
+            <point key="canvasLocation" x="1746" y="943"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8ZN-cB-sCM">
@@ -319,7 +319,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIR-LD-mwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858" y="87"/>
+            <point key="canvasLocation" x="-858" y="-329"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -384,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19.53125" y="850.1953125"/>
+            <point key="canvasLocation" x="20" y="650"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JGM-xw-yji">
@@ -402,7 +402,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XO8-JJ-tgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858" y="852"/>
+            <point key="canvasLocation" x="-859" y="650"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8wx-oL-fEu">
@@ -420,7 +420,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0C-Uv-TO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="-278"/>
+            <point key="canvasLocation" x="909" y="-942"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uch-6k-740">
@@ -438,7 +438,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrb-R3-knP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="453"/>
+            <point key="canvasLocation" x="952" y="158"/>
         </scene>
     </scenes>
     <resources>
@@ -448,7 +448,7 @@
         <image name="LearningRx Logo-RGB-no tag" width="1850" height="405"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BA7-Df-m9a"/>
         <segue reference="gtP-ff-VQZ"/>
+        <segue reference="XP5-Pw-ZvF"/>
     </inferredMetricsTieBreakers>
 </document>
