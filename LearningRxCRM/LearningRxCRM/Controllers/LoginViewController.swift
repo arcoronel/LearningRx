@@ -26,12 +26,14 @@ class LoginViewController: UIViewController {
         }
         //Set Nav Title
         self.navigationItem.title = "Login"
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func LoginButton(_ sender: UIButton) {
         //grabs value of text boxes when button is pressed and tests them against a "functioning" password and username
         let inputUsername = username.text
@@ -64,11 +66,15 @@ class LoginViewController: UIViewController {
         else{
             correctPassword = false
         }
+
         
         if (correctUsername && correctPassword){
             //logs in user
             loggedIn = true
             self.present(alertSuccessController, animated: true, completion: nil)
+            
+            //update MVC to logged in
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "setLoggedIn"), object: nil)
         }
         else{
             //lets user know they did not log in properly
