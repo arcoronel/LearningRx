@@ -19,6 +19,8 @@
 		ACC4CB3E1E6D00DF00CAEAB0 /* research_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC4CB3B1E6D00DF00CAEAB0 /* research_btn.png */; };
 		ACC4CB3F1E6D00DF00CAEAB0 /* survey_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC4CB3C1E6D00DF00CAEAB0 /* survey_btn.png */; };
 		ACC4CB401E6D00DF00CAEAB0 /* video_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC4CB3D1E6D00DF00CAEAB0 /* video_btn.png */; };
+		ACDA082F1E6F0AF40067983F /* SurveyStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA082E1E6F0AF40067983F /* SurveyStartViewController.swift */; };
+		ACDA08311E6F103D0067983F /* StartSurveyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA08301E6F103D0067983F /* StartSurveyViewControllerTests.swift */; };
 		ACDC4DC71E6CD438006B6B43 /* SurveyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */; };
 		ACDC4DCC1E6CDF58006B6B43 /* SurveyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC4DCB1E6CDF58006B6B43 /* SurveyModel.swift */; };
 		ACF6ABFC1E6CF5ED00582DFC /* SurveyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6ABFB1E6CF5ED00582DFC /* SurveyModelTests.swift */; };
@@ -60,6 +62,8 @@
 		ACC4CB3B1E6D00DF00CAEAB0 /* research_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = research_btn.png; sourceTree = "<group>"; };
 		ACC4CB3C1E6D00DF00CAEAB0 /* survey_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = survey_btn.png; sourceTree = "<group>"; };
 		ACC4CB3D1E6D00DF00CAEAB0 /* video_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_btn.png; sourceTree = "<group>"; };
+		ACDA082E1E6F0AF40067983F /* SurveyStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyStartViewController.swift; sourceTree = "<group>"; };
+		ACDA08301E6F103D0067983F /* StartSurveyViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartSurveyViewControllerTests.swift; sourceTree = "<group>"; };
 		ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewControllerTests.swift; sourceTree = "<group>"; };
 		ACDC4DCB1E6CDF58006B6B43 /* SurveyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyModel.swift; sourceTree = "<group>"; };
 		ACF6ABFB1E6CF5ED00582DFC /* SurveyModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyModelTests.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			children = (
 				ACDC4DC61E6CD438006B6B43 /* SurveyViewControllerTests.swift */,
 				D985454A1E6DC96200328957 /* LoginViewControllerTests.swift */,
+				ACDA08301E6F103D0067983F /* StartSurveyViewControllerTests.swift */,
 			);
 			path = TestControllers;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				AC4964CD1E629FFA00A6E6A8 /* MasterTableViewController.swift */,
 				AC5F7F8E1E6584E700C9BF88 /* SurveyResultsViewController.swift */,
 				AC3DE54B1E63725E006C55F2 /* SurveyViewController.swift */,
+				ACDA082E1E6F0AF40067983F /* SurveyStartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 				AC4964B01E629EDD00A6E6A8 /* HomeViewController.swift in Sources */,
 				AC4964CE1E629FFA00A6E6A8 /* MasterTableViewController.swift in Sources */,
 				ACDC4DCC1E6CDF58006B6B43 /* SurveyModel.swift in Sources */,
+				ACDA082F1E6F0AF40067983F /* SurveyStartViewController.swift in Sources */,
 				AC4964AE1E629EDD00A6E6A8 /* AppDelegate.swift in Sources */,
 				AC3DE54C1E63725E006C55F2 /* SurveyViewController.swift in Sources */,
 			);
@@ -419,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D985454B1E6DC96200328957 /* LoginViewControllerTests.swift in Sources */,
+				ACDA08311E6F103D0067983F /* StartSurveyViewControllerTests.swift in Sources */,
 				ACDC4DC71E6CD438006B6B43 /* SurveyViewControllerTests.swift in Sources */,
 				ACF6ABFC1E6CF5ED00582DFC /* SurveyModelTests.swift in Sources */,
 			);

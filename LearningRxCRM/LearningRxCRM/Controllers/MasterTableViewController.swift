@@ -55,7 +55,7 @@ class MasterTableViewController: UITableViewController {
     
     //update table view with login info
     func setLoggedInTableData(notification: NSNotification) {
-        self.tableData = ["Home","Survey","Events","Login"]
+        self.tableData = ["Home","Survey","Events","Logout"]
         self.tableView.reloadData()
     }
 }

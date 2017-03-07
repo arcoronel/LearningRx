@@ -15,8 +15,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     var loggedIn = false
     
-    weak var MasterTVC: MasterTableViewController?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
