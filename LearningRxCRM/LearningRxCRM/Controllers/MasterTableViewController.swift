@@ -45,12 +45,7 @@ class MasterTableViewController: UITableViewController {
     
     //select -> go there (can add some custom values if needed later)
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        for (index, element) in tableData.enumerated() {
-            if (indexPath.row == index) {
-                self.performSegue(withIdentifier: "to" + element, sender: nil)
-            }
-        }
+        performSegue(withIdentifier: "to" + tableData[indexPath.row], sender: tableData[indexPath.row])
     }
 
     override func didReceiveMemoryWarning() {
