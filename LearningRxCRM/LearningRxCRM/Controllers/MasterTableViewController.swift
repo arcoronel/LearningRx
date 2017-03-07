@@ -20,6 +20,7 @@ class MasterTableViewController: UITableViewController {
         
         //removes additional blank lines after last cell
         self.tableView.tableFooterView = UIView();
+        NotificationCenter.default.addObserver(self, selector: #selector(setLoggedInTableData), name: NSNotification.Name(rawValue: "setLoggedIn"), object: nil)
         
     }
     
@@ -50,5 +51,11 @@ class MasterTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    //update table view with login info
+    func setLoggedInTableData(notification: NSNotification) {
+        self.tableData = ["Home","Survey","Events","Login"]
+        self.tableView.reloadData()
     }
 }
