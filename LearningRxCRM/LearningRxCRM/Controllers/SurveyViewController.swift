@@ -35,6 +35,10 @@ class SurveyViewController: UIViewController {
     var sensoryMotorSkills: Int = 0
     var oppositionalBehavior: Int = 0
     
+    //User Info
+    var surveyUsername: String = ""
+    var surveyTaker: String = ""
+    
 
     
     override func viewDidLoad() {
@@ -75,6 +79,8 @@ class SurveyViewController: UIViewController {
         vc.visualProcessingSkills = String(visualProcessingSkills)
         vc.logicAndReasoningSkills = String(logicAndReasoningSkills)
         vc.oppositionalBehavior = String(oppositionalBehavior)
+        vc.surveyUsername = surveyUsername
+        vc.surveyTaker = surveyTaker
     }
 
     //on next adds resutls, updates progress, sets current question and checks if you are on last question or going to results

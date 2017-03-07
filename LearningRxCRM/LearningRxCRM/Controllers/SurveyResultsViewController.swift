@@ -20,8 +20,8 @@ class SurveyResultsViewController: UIViewController {
     @IBOutlet weak var logicAndReasoningSkillsLabel: UILabel!
     @IBOutlet weak var sensoryMotorSkillsLabel: UILabel!
     @IBOutlet weak var oppsitionalBehaviorLabel: UILabel!
-    
-    
+    @IBOutlet weak var surveyTakerLabel: UILabel!
+    @IBOutlet weak var surveyUsernameLabel: UILabel!
     
     var attentionSkills = String()
     var proccessingSpeedSkills = String()
@@ -32,6 +32,8 @@ class SurveyResultsViewController: UIViewController {
     var logicAndReasoningSkills = String()
     var sensoryMotorSkills = String()
     var oppositionalBehavior = String()
+    var surveyUsername = String()
+    var surveyTaker = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +48,8 @@ class SurveyResultsViewController: UIViewController {
         logicAndReasoningSkillsLabel.text = "Logic/Reasoning: " + logicAndReasoningSkills
         sensoryMotorSkillsLabel.text = "Sensory/Motor: " + sensoryMotorSkills
         oppsitionalBehaviorLabel.text = "Oppsitional Behavior: " + oppositionalBehavior
+        surveyUsernameLabel.text = surveyUsername
+        surveyTakerLabel.text = surveyTaker
         
         
         if let splitView = self.navigationController?.splitViewController, !splitView.isCollapsed {
